@@ -1,0 +1,25 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: 001-create-product
+      author: mouhamadou
+
+      changes:
+
+        - createTable:
+            tableName: product
+
+            columns:
+
+              - column:
+                  name: id
+                  type: BIGSERIAL
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: name
+                  type: VARCHAR(150)
+                  constraints:
+                    nullable: false
