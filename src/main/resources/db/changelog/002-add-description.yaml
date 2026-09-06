@@ -1,0 +1,15 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: 002-add-description
+      author: mouhamadou
+
+      changes:
+
+        - addColumn:
+            tableName: product
+            columns:
+
+              - column:
+                  name: description
+                  type: TEXT
